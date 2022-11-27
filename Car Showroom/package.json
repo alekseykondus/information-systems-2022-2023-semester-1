@@ -1,0 +1,12 @@
+{
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^4.18.2",
+    "finalhandler": "^1.2.0",
+    "http": "^0.0.1-security",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "serve-static": "^1.15.0",
+    "static-server": "^2.2.1"
+  }
+}

@@ -1,0 +1,16 @@
+.menu {
+  background-color: black;
+}
+.menu li {
+  box-sizing: content-box;
+  padding: 15px 0px;
+  font-family: sans-serif;
+  font-size: 1.65em;
+}
+.menu-text {
+  letter-spacing: 3px;
+}
+.menu-text:hover {
+  font-weight: bolder;
+  text-shadow: #5dc8e5 0 0 10px;
+}

@@ -1,0 +1,58 @@
+.checkout {
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+  transition: opacity 1s;
+}
+
+.checkout-background {
+  left: 0px;
+  z-index: 0;
+  opacity: 0.4;
+  background-size: 100%;
+}
+
+.checkout-item {
+  margin-top: 5%;
+  width: 600px;
+  height: 670px;
+  border-radius: 5px;
+  z-index: 1;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px #ccc;
+}
+
+.checkout-close-item {
+  width: 30px;
+  height: 30px;
+  opacity: 1;
+  border-radius: 5px;
+}
+
+.close {
+  width: 30px;
+  height: 30px;
+  opacity: 0.4;
+}
+
+.close:hover {
+  opacity: 1;
+}
+
+.close:before,
+.close:after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 30px;
+  width: 2px;
+  background-color: #000;
+}
+
+.close:before {
+  transform: rotate(45deg);
+}
+
+.close:after {
+  transform: rotate(-45deg);
+}

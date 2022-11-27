@@ -1,0 +1,13 @@
+.footer {
+  background-color: #000;
+  font-size: 1.1em;
+}
+.footer-info {
+  margin: 20px;
+  margin-left: 20%;
+}
+.footer-menu-li {
+  font-family: sans-serif;
+  font-size: 16px;
+  list-style-type: none;
+}

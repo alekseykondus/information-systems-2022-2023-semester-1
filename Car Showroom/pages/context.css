@@ -1,0 +1,213 @@
+.text-path-section {
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: 1em;
+  color: #000;
+}
+
+.text-path-section:hover {
+  font-weight: bolder;
+}
+
+.categories-container {
+  list-style: none;
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+}
+
+.categories-container-item,
+.controls-product-item {
+  text-decoration: none;
+  color: #000;
+}
+
+.categories-container li {
+  margin-bottom: 1em;
+}
+
+.inside-categories {
+  padding: 0;
+  font-size: 16px;
+  list-style: none;
+  margin-left: 30px;
+}
+
+.inside-categories li {
+  margin-bottom: 0em;
+  padding: 4px;
+  padding-left: 5px;
+  list-style-type: square;
+  padding-right: 10px;
+}
+
+.products-container2 {
+  margin-top: -640px;
+}
+
+.product {
+  margin: 10px;
+  background-color: #01153e;
+  border-radius: 2px;
+  width: 255px;
+  height: 300px;
+}
+
+@media (max-width: 1137px) {
+  .products-container2 {
+    margin-top: -1920px;
+  }
+
+  .controls-product {
+    margin-top: 2020px;
+  }
+
+  .product {
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: 1137px) and (max-width: 1490px) {
+  .products-container2 {
+    margin-top: -960px;
+  }
+
+  .controls-product {
+    margin-top: 1120px;
+  }
+
+  .product {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+.product-name {
+  font-family: sans-serif;
+  font-size: 1.4em;
+}
+
+.product-img {
+  width: 250px;
+  height: 130px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.product-price {
+  font-family: sans-serif;
+  font-size: 1.6em;
+}
+
+.product-description {
+  height: 80px;
+  font-family: sans-serif;
+  font-size: 1em;
+}
+
+.product-img1 {
+  background-image: url(images/Lamborghini_Sian.jpg);
+}
+
+.product-img2 {
+  background-image: url(images/Tesla_Roadster.jpg);
+}
+
+.product-img3 {
+  background-image: url(images/Renault_Alpine.jpg);
+}
+
+.product-img4 {
+  background-image: url(images/Chevrolet_Corvette.jpg);
+}
+
+.product-img5 {
+  background-image: url(images/Mercedes_AMG_One.jpg);
+}
+
+.product-img6 {
+  background-image: url(images/Bugatti_Divo.jpg);
+}
+
+.product-img7 {
+  background-image: url(images/Honda_NSX.jpeg);
+}
+
+.product-img8 {
+  background-image: url(images/Subaru_BRZ.jpg);
+}
+
+.product-img9 {
+  background-image: url(images/Audi_e-tron_GT.jpg);
+}
+
+.product-img10 {
+  background-image: url(images/KIA_Stinger.jpg);
+}
+
+.product-img11 {
+  background-image: url(images/BMW_M4.jpg);
+}
+
+.product-img12 {
+  background-image: url(images/Bentley_Bentayga.jpg);
+}
+
+.product-frag {
+  opacity: 0;
+  z-index: 0;
+  transition: transform 0.6s, opacity 0.6s, -webkit-filter 2s ease-out;
+}
+
+#container1:checked~.main-products-container .products-container1 .product-frag,
+#container2:checked~.main-products-container .products-container2 .product-frag,
+#container3:checked~.main-products-container .products-container3 .product-frag,
+#container4:checked~.main-products-container .products-container4 .product-frag {
+  opacity: 1;
+  z-index: 1;
+}
+
+.controls-product {
+  margin-top: 670px;
+  width: 100px;
+  left: 50%;
+  margin-left: -40px;
+  z-index: 2;
+}
+
+#container1:checked~.controls-product label:nth-of-type(1),
+#container2:checked~.controls-product label:nth-of-type(2),
+#container3:checked~.controls-product label:nth-of-type(3),
+#container4:checked~.controls-product label:nth-of-type(4) {
+  opacity: 1;
+  font-size: 2em;
+  color: blue;
+}
+
+.center-section-bottom-text {
+  column-count: 2;
+  column-gap: 60px;
+  padding: 30px;
+  border-top: 1px solid#272727;
+  color: #272727;
+  font-size: 16px;
+}
+
+.subcategories-list {
+  list-style-type: square;
+  list-style-position: inside;
+  padding: 3px 0;
+  margin-left: 20px;
+  width: auto;
+}
+
+.price>a {
+  text-decoration: none;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+.price>a:hover {
+  font-size: 21px;
+  text-shadow: gray 0 0 5px;
+}

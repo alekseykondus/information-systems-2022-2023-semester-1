@@ -1,0 +1,150 @@
+.slider-div {
+  height: 55%;
+}
+@media screen and (min-width: 1200px) and (max-width: 1300px) {
+  .slider-div {
+    height: 50%;
+  }
+}
+@media screen and (min-width: 1080px) and (max-width: 1200px) {
+  .slider-div {
+    height: 45%;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1080px) {
+  .slider-div {
+    height: 40%;
+  }
+}
+@media screen and (min-width: 845px) and (max-width: 960px) {
+  .slider-div {
+    height: 35%;
+  }
+}
+@media screen and (min-width: 720px) and (max-width: 845px) {
+  .slider-div {
+    height: 30%;
+  }
+}
+@media screen and (min-width: 605px) and (max-width: 720px) {
+  .slider-div {
+    height: 25%;
+  }
+}
+@media screen and (max-width: 605px) {
+  .slider-div {
+    height: 20%;
+  }
+}
+
+.slider,
+.img {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+}
+.slider {
+  background-color: black;
+  border-radius: 5px;
+  box-shadow: 0 7px 20px rgb(0, 0, 0, 0.5);
+}
+
+.img1 .frag {
+  background-image: url(images/Renault_Alpine.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.img2 .frag {
+  background-image: url(images/Chevrolet_Corvette.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.img3 .frag {
+  background-image: url(images/Subaru_BRZ.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.img4 .frag {
+  background-image: url(images/img4.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.img5 .frag {
+  background-image: url(images/Lamborghini_Sian2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.img6 .frag {
+  background-image: url(images/img6.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.frag {
+  width: 100%;
+  height: inherit;
+  opacity: 0;
+  z-index: 0;
+  transition: transform 0.6s, opacity 0.6s, -webkit-filter 2s ease-out;
+}
+#slide1:checked ~ .slider .img1 .frag,
+#slide2:checked ~ .slider .img2 .frag,
+#slide3:checked ~ .slider .img3 .frag,
+#slide4:checked ~ .slider .img4 .frag,
+#slide5:checked ~ .slider .img5 .frag,
+#slide6:checked ~ .slider .img6 .frag {
+  opacity: 1;
+  z-index: 1;
+}
+.controls {
+  bottom: 20px;
+  left: 50%;
+  margin-left: -115px;
+}
+.controls label {
+  display: block;
+  height: 10px;
+  width: 30px;
+  cursor: pointer;
+  opacity: 0.3;
+  transition: opacity 0.5s;
+}
+.controls label:hover,
+.side-controls label:hover,
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3),
+#slide4:checked ~ .controls label:nth-of-type(4),
+#slide5:checked ~ .controls label:nth-of-type(5),
+#slide6:checked ~ .controls label:nth-of-type(6) {
+  opacity: 0.8;
+}
+
+.side-controls label {
+  top: 45%;
+  display: block;
+  z-index: 1;
+  cursor: pointer;
+  opacity: 0.4;
+  transition: opacity 0.5s;
+}
+#slide1:checked ~ .side-controls label:nth-of-type(6),
+#slide2:checked ~ .side-controls label:nth-of-type(1),
+#slide3:checked ~ .side-controls label:nth-of-type(2),
+#slide4:checked ~ .side-controls label:nth-of-type(3),
+#slide5:checked ~ .side-controls label:nth-of-type(4),
+#slide6:checked ~ .side-controls label:nth-of-type(5) {
+  margin-left: -15px;
+  border: 30px solid transparent;
+  border-right: 30px solid white;
+}
+#slide1:checked ~ .side-controls label:nth-of-type(2),
+#slide2:checked ~ .side-controls label:nth-of-type(3),
+#slide3:checked ~ .side-controls label:nth-of-type(4),
+#slide4:checked ~ .side-controls label:nth-of-type(5),
+#slide5:checked ~ .side-controls label:nth-of-type(6),
+#slide6:checked ~ .side-controls label:nth-of-type(1) {
+  margin-left: 95%;
+  border: 30px solid transparent;
+  border-left: 30px solid white;
+}

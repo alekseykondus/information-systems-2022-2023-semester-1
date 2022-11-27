@@ -1,0 +1,456 @@
+<html>
+  <head>
+    <title>DELUXE AUTO</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="slider.css" />
+    <link rel="stylesheet" href="context.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="feedback.css" />
+    <meta name="viewport" content="width=width-device, initial-scale=1" />
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "PT Sans", sans-serif;
+      font-size: 14px;
+      line-height: 22px;
+      margin: 0px;
+      background: url(images/background.jpg) 100% 100%;
+      background-attachment: fixed;
+      background-size: 100%;
+    }
+    @media (max-width: 545px) {
+      .center-section-bottom-text {
+        margin-left: 50px;
+      }
+    }
+  </style>
+
+  <body>
+    <div class="container-fluid">
+      <div class="min-vh-100">
+        <div class="row header text-light">
+          <div
+            class="col-12 col-sm-5 col-md-5 col-lg-5 clo-xl-5 header-block p-3"
+          >
+            <div class="row">
+              <div class="col-5 col-sm-5 col-md-5 col-lg-6 clo-xl-6 text-right">
+                <img class="logo" src="images/logo.jpg" />
+              </div>
+              <div class="col-7 col-sm-7 col-md-7 col-lg-6 clo-xl-6 text-left">
+                <br /><span class="name-company font-weight-bolder"
+                  >DELUXE AUTO</span
+                ><br /><br />
+                <span class="subtitle">Speed <b>​​&</b> Power</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-0 col-sm-0 col-md-0 col-lg-0 clo-xl-2"></div>
+          <div
+            class="col-12 col-sm-5 col-md-5 col-lg-5 clo-xl-4 header-block p-3"
+            style="text-align: right"
+          >
+            <span class="number">+38(066) 777-77-77</span><br />
+            <span class="number">+38(063) 777-77-77</span><br /><br />
+            <span class="feedback-text ml-5 font-weight-bolder">
+              <label for="feedback1">Обратная связь</label>
+            </span>
+          </div>
+          <div
+            class="col-2 col-sm-2 col-md-2 col-lg-2 clo-xl-2 header-block p-3"
+            style="text-align: center"
+          >
+            <a href="cart/cart.html">
+              <img
+                src="images/iconfinder-basket-4341280_120547.png"
+                width="100px"
+                height="100px"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="row menu text-center">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 clo-xl-12">
+            <ul class="m-0 ml-n4 list-unstyled">
+              <li class="list-inline-item position-relative">
+                <a href="index.html" class="menu-text text-light">ГЛАВНАЯ</a>
+                <span class="text-light mr-2 ml-2">|</span>
+              </li>
+              <li class="list-inline-item position-relative">
+                <a href="#contents" class="menu-text text-light">КАТАЛОГ</a>
+                <span class="text-light mr-2 ml-2">|</span>
+              </li>
+              <li class="list-inline-item position-relative">
+                <a href="#" class="menu-text text-light">ДОСТАВКА И ОПЛАТА</a>
+                <span class="text-light mr-2 ml-2">|</span>
+              </li>
+              <li class="list-inline-item position-relative">
+                <a href="price-list.html" class="menu-text text-light"
+                  >ПРАЙС ЛИСТ</a
+                >
+                <span class="text-light mr-2 ml-2">|</span>
+              </li>
+              <li class="list-inline-item position-relative">
+               <a href="contacts.html" class="menu-text text-light"
+                 >КОНТАКТЫ</a
+               >
+               <span class="text-light mr-2 ml-2">|</span>
+             </li>
+             <li class="list-inline-item position-relative">
+               <a href="analytics.html" class="menu-text text-light"
+                 >АНАЛИТИКА</a
+               >
+               </li>
+           </ul>
+          </div>
+        </div>
+        <div class="row slider-div">
+          <div class="col-9 col-sm-9 col-md-9 col-lg-9 clo-xl-9 p-0 mx-auto">
+            <input
+              class="d-none"
+              type="radio"
+              name="slides"
+              id="slide1"
+              checked
+            />
+            <input class="d-none" type="radio" name="slides" id="slide2" />
+            <input class="d-none" type="radio" name="slides" id="slide3" />
+            <input class="d-none" type="radio" name="slides" id="slide4" />
+            <input class="d-none" type="radio" name="slides" id="slide5" />
+            <input class="d-none" type="radio" name="slides" id="slide6" />
+
+            <div class="slider border position-relative overflow-hidden">
+              <div class="img position-absolute img1">
+                <div class="frag"></div>
+              </div>
+              <div class="img position-absolute img2">
+                <div class="frag"></div>
+              </div>
+              <div class="img position-absolute img3">
+                <div class="frag"></div>
+              </div>
+              <div class="img position-absolute img4">
+                <div class="frag"></div>
+              </div>
+              <div class="img position-absolute img5">
+                <div class="frag"></div>
+              </div>
+              <div class="img position-absolute img6">
+                <div class="frag"></div>
+              </div>
+            </div>
+
+            <div class="side-controls">
+              <label
+                class="position-absolute float-left mt-n2"
+                for="slide1"
+              ></label>
+              <label
+                class="position-absolute float-left mt-n2"
+                for="slide2"
+              ></label>
+              <label
+                class="position-absolute float-left mt-n2"
+                for="slide3"
+              ></label>
+              <label
+                class="position-absolute float-left mt-n2"
+                for="slide4"
+              ></label>
+              <label
+                class="position-absolute float-left mt-n2"
+                for="slide5"
+              ></label>
+              <label
+                class="position-absolute float-left mt-n2"
+                for="slide6"
+              ></label>
+            </div>
+
+            <div class="controls position-absolute">
+              <label class="float-left mr-2 bg-white" for="slide1"></label>
+              <label class="float-left mr-2 bg-white" for="slide2"></label>
+              <label class="float-left mr-2 bg-white" for="slide3"></label>
+              <label class="float-left mr-2 bg-white" for="slide4"></label>
+              <label class="float-left mr-2 bg-white" for="slide5"></label>
+              <label class="float-left mr-2 bg-white" for="slide6"></label>
+            </div>
+          </div>
+        </div>
+        <script src="slider.js"></script>
+
+        <div class="row" id="contents">
+          <div
+            class="col-9 col-sm-9 col-md-9 col-lg-9 clo-xl-9 bg-white mx-auto"
+          >
+            <div class="p-2">
+              <a href="index.html" class="text-path-section">Главная</a> /
+              <a href="#contents" class="text-path-section">Каталог</a> /
+              <a href="#contents" class="text-path-section">Автомобили</a>
+            </div>
+            <div class="row">
+              <div
+                class="col-3 col-sm-3 col-md-3 col-lg-3 clo-xl-3 pl-2 pt-4"
+                style="min-width: 150px"
+              >
+                <ul class="categories-container ml-n3">
+                  <li>
+                    <a href="#contents" class="categories-container-item"
+                      ><u>АВТОМОБИЛИ</u></a
+                    >
+                    <ul class="inside-categories">
+                      <li>
+                        <a href="#contents" class="categories-container-item"
+                          ><u>Спортивные</u></a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="categories-container-item"
+                          >Семейные</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="categories-container-item">АКСЕССУАРЫ</a>
+                  </li>
+                  <li>
+                    <a href="contacts.html" class="categories-container-item"
+                      >ДРУГОЕ</a
+                    >
+                  </li>
+                </ul>
+                <div class="w-100 m-4 pl-4">
+                  <a href="doc/PriceList.xlsx" download>
+                    <img
+                      src="images/prise.jpg"
+                      alt="excel-logo"
+                      width="100px"
+                    />
+                    <br />
+                    <h5 class="text-dark">ПРАЙС-ЛИСТ</h5>
+                  </a>
+                </div>
+              </div>
+              <input
+                class="d-none"
+                type="radio"
+                name="products-container"
+                id="container1"
+                checked
+              />
+              <input
+                class="d-none"
+                type="radio"
+                name="products-container"
+                id="container2"
+              />
+              <input
+                class="d-none"
+                type="radio"
+                name="products-container"
+                id="container3"
+              />
+              <input
+                class="d-none"
+                type="radio"
+                name="products-container"
+                id="container4"
+              />
+              <input
+                class="d-none"
+                type="radio"
+                name="products-container"
+                id="container5"
+              />
+              <div
+                class="
+                  col-9 col-sm-9 col-md-9 col-lg-9
+                  clo-xl-9
+                  main-products-container
+                  ml-n5
+                  p-0
+                "
+                id="main-products-container"
+              >
+
+              <select id="period" class="form-control" onchange="PeriodChanged()">
+                <option> Весь период </option>
+                <option> Определённый период </option>
+              </select>
+              <div id = "periodStartEnd" class="form-row"></div>
+              <div id="sales-amount" class="py-1 px-1">
+              </div>
+              
+              <script src="analytics.js"></script>
+
+                <div class="float-left products-container1">
+                </div>
+                <div class="center-section-bottom-text w-100 text-justify">
+                  Компания Deluxe Auto, основанная в 2020, является абсолютным
+                  лидером на рынке продаж автомобилей класса люкс. Помимо
+                  классической торговой линейки, мы предлагаем нашим клиентам
+                  набор премиум аксессуаров, таких как авто чехлы, акустические
+                  системы, услуги шиномонтажа и многое другое. Deluxe Auto
+                  представлены в более 20 странах мира на 4 континентах, в то
+                  время как главный офис находится в г. Киев, Украина. Это стало
+                  возможным благодаря сервису высочайшего класса, команде лучших
+                  профессионалов своего дела, а также заботе о наших клиентах
+                  даже после осуществления покупки. Ответственный подход и
+                  уникальное торговое предложение является нашим безоговорочным
+                  принципом.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="cart.js"></script>
+      </div>
+      <div class="row footer text-light p-3">
+        <div class="col-4 col-sm-4 col-md-4 col-lg-4 clo-xl-4">
+          <div class="footer-info">© 2020 Deluxe Auto<br /></div>
+        </div>
+        <div class="col-4 col-sm-4 col-md-4 col-lg-4 clo-xl-4 text-center">
+          <div class="m-1">
+            <ul>
+              <li class="footer-menu-li">
+                <a href="index.html" class="menu-text text-light">Главная</a>
+              </li>
+              <li class="footer-menu-li">
+                <a href="#contents" class="menu-text text-light">Каталог</a>
+              </li>
+              <li class="footer-menu-li">
+                <a href="#" class="menu-text text-light">Доставка и оплата</a>
+              </li>
+              <li class="footer-menu-li">
+                <a href="price-list.html" class="menu-text text-light"
+                  >Прайс лист</a
+                >
+              </li>
+              <li class="footer-menu-li">
+                <a href="contacts.html" class="menu-text text-light"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-4 col-sm-4 col-md-4 col-lg-4 clo-xl-4 text-center">
+          <div class="m-4">
+            +38(066) 777-77-77<br />
+            +38(063) 777-77-77<br />
+            DeluxeAuto @gmail.com
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <input
+      class="d-none position-absolute"
+      type="radio"
+      name="feedback-button"
+      id="feedback1"
+      style="z-index: 4"
+    />
+    <input
+      class="d-none position-absolute"
+      type="radio"
+      name="feedback-button"
+      id="feedback2"
+      style="z-index: 4"
+      checked
+    />
+    <input
+      class="d-none position-absolute"
+      type="radio"
+      name="feedback-button"
+      id="feedback2"
+      style="z-index: 4"
+      checked
+    />
+    <div
+      class="
+        feedback
+        w-100
+        h-100
+        position-fixed
+        d-flex
+        flex-wrap
+        justify-content-center
+      "
+    >
+      <div
+        class="feedback-background w-100 h-100 position-absolute bg-secondary"
+      ></div>
+      <div class="feedback-item d-block bg-white px-5">
+        <label for="feedback2" class="w-100">
+          <div class="d-flex justify-content-end ml-5 w-100">
+            <div class="feedback-close-item bg-white">
+              <div class="close position-relative"></div>
+            </div>
+          </div>
+        </label>
+        <h2 class="text-center font-weight-bolder mb-4">ОБРАТНАЯ СВЯЗЬ</h2>
+        <form>
+          <div class="mb-3">
+            <label for="InputName" class="form-label">Ваше имя *</label>
+            <input
+              type="name"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="InputNumber" class="form-label">Телефон *</label>
+            <input
+              type="number"
+              class="form-control"
+              id="exampleInputPassword1"
+              required
+            />
+            <div id="NumberHelp" class="form-text">
+              We'll never share your phone number with anyone.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="InputEmail" class="form-label">Email *</label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputPassword1"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="InputEmail" class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              id="InputText"
+              placeholder=" "
+              style="height: 100px"
+            ></textarea>
+          </div>
+          <label for="feedback3" style="width: 100%">
+            <button
+              type="submit"
+              class="btn btn-primary mx-auto"
+              style="width: 100%"
+            >
+              Отправить
+            </button>
+          </label>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
